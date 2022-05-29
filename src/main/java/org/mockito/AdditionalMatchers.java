@@ -204,7 +204,7 @@ public final class AdditionalMatchers {
      * @return <code>0</code>.
      */
     public static int leq(int value) {
-        reportMatcher(new LessOrEqual<>(value));
+        reportMatcher(new LessOrEqual<Integer>(value));
         return 0;
     }
 
@@ -218,7 +218,7 @@ public final class AdditionalMatchers {
      * @return <code>0</code>.
      */
     public static long leq(long value) {
-        reportMatcher(new LessOrEqual<>(value));
+        reportMatcher(new LessOrEqual<Long>(value));
         return 0;
     }
 
@@ -232,7 +232,7 @@ public final class AdditionalMatchers {
      * @return <code>0</code>.
      */
     public static short leq(short value) {
-        reportMatcher(new LessOrEqual<>(value));
+        reportMatcher(new LessOrEqual<Short>(value));
         return 0;
     }
 
@@ -246,7 +246,7 @@ public final class AdditionalMatchers {
      * @return <code>null</code>.
      */
     public static <T extends Comparable<T>> T gt(T value) {
-        reportMatcher(new GreaterThan<>(value));
+        reportMatcher(new GreaterThan<T>(value));
         return null;
     }
 
@@ -288,7 +288,7 @@ public final class AdditionalMatchers {
      * @return <code>0</code>.
      */
     public static float gt(float value) {
-        reportMatcher(new GreaterThan<>(value));
+        reportMatcher(new GreaterThan<Float>(value));
         return 0;
     }
 
@@ -316,7 +316,7 @@ public final class AdditionalMatchers {
      * @return <code>0</code>.
      */
     public static long gt(long value) {
-        reportMatcher(new GreaterThan<>(value));
+        reportMatcher(new GreaterThan<Long>(value));
         return 0;
     }
 
